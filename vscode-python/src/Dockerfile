@@ -19,7 +19,7 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 ENV POETRY_VERSION=1.0.0
 
-RUN && pip install --upgrade pip setuptools wheel \
+RUN pip install --upgrade pip setuptools wheel \
     && pip install "poetry==$POETRY_VERSION"
 
 WORKDIR /app
