@@ -23,7 +23,7 @@ RUN pip install --upgrade pip setuptools wheel \
     && pip install "poetry==$POETRY_VERSION"
 
 WORKDIR /app
-COPY poetry.lock pyproject.toml ./
+COPY poetry.* pyproject.toml ./
 
 ENV VIRTUAL_ENV=/home/$USERNAME/.virtualenvs/$PROJECT
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
