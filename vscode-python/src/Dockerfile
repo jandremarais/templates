@@ -28,7 +28,7 @@ COPY poetry.* pyproject.toml ./
 ENV VIRTUAL_ENV=/home/$USERNAME/.virtualenvs/$PROJECT
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 
-# USER $USERNAME
+USER $USERNAME
 RUN python -m venv $VIRTUAL_ENV \
     && poetry install
 
