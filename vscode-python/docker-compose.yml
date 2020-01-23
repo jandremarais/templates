@@ -5,7 +5,7 @@ services:
     build: 
       context: ./src
       args: 
-        USER: $USER
+        USERNAME: ${USER}
         PROJECT: project
     volumes:
       - /data:/data
