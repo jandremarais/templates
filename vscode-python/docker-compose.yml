@@ -2,6 +2,10 @@ version: '3.7'
 
 services:
   python:
-    build: ./src
+    build: 
+      context: ./src
+      args: 
+        USER: $USER
+        PROJECT: project
     volumes:
       - /data:/data
