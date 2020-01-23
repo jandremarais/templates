@@ -8,9 +8,9 @@
     "workspaceFolder": "/workspace",
 	"settings": { 
         "terminal.integrated.shell.linux": "/bin/bash",
-        "python.pythonPath": "/home/USER/.virtualenvs/PROJECT/bin/python"
+        "python.pythonPath": "PYTHON PATH"
     },
-    "remoteUser": "${containerEnv:USERNAME}",
+    "remoteUser": "USER",
     "postCreateCommand": "cd src && poetry install",
 	"extensions": [
         "ms-python.python",
