@@ -8,7 +8,7 @@
     "workspaceFolder": "/workspace",
 	"settings": { 
         "terminal.integrated.shell.linux": "/bin/bash",
-        "python.pythonPath": "PYTHON PATH"
+        "python.pythonPath": "PYTHONPATH"
     },
     "remoteUser": "USER",
     "postCreateCommand": "cd src && poetry install",
