@@ -1,5 +1,5 @@
 {
-	"name": "${containerEnv:PROJECT} Development Container",
+	"name": "PROJECT Development Container",
 	"dockerComposeFile": [
         "../docker-compose.yml",
         "docker-compose.yml"
@@ -8,7 +8,7 @@
     "workspaceFolder": "/workspace",
 	"settings": { 
         "terminal.integrated.shell.linux": "/bin/bash",
-        "python.pythonPath": "/home/${containerEnv:USERNAME}/.virtualenvs/${containerEnv:PROJECT}/bin/python"
+        "python.pythonPath": "/home/USER/.virtualenvs/PROJECT/bin/python"
     },
     "remoteUser": "${containerEnv:USERNAME}",
     "postCreateCommand": "cd src && poetry install",
