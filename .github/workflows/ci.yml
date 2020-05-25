@@ -15,4 +15,5 @@ jobs:
           registry: docker.pkg.github.com
           repository: jandremarais/templates/test-image
           tag_with_ref: true
-          path: ./vscode-python/src
+          path: ./vscode-python/images
+          dockerfile: dev.Dockerfile
