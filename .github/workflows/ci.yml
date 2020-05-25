@@ -16,4 +16,4 @@ jobs:
           repository: jandremarais/templates/test-image
           tag_with_ref: true
           path: ./vscode-python/images
-          dockerfile: dev.Dockerfile
+          dockerfile: ./vscode-python/images/dev.Dockerfile
